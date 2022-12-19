@@ -1,0 +1,12 @@
+server:
+  port: 8089
+rocketmq:
+  nameServer: 139.196.112.185:9876
+  producer:
+    group: producer-mq
+  consumer:
+    consumer-group: mq-consumer
+    listener-list:
+      - listener-name: sendMessageConsumer
+        topic: send-message
+        tag:

@@ -1,0 +1,23 @@
+server:
+  port: 8090
+rocketmq:
+  # 多个用;隔开
+  name-server: 192.168.18.88:9876
+  producer:
+    # 生产组
+    accessKey: 4whfMivJxteFOqpbPab
+    secretKey: h9vykLoosA0eeMSoa
+#    group: group-ofc
+    # 发送消息超时时间，默认 3000
+    sendMessageTimeout: 3000
+    # 发送消息失败重试次数，默认2
+    retryTimesWhenSendFailed: 2
+    # 发送异步消息失败重试次数，默认2
+    retryTimesWhenSendAsyncFailed: 2
+  consumer:
+    access-key: 4whfMivJxteFOqpbPab
+    secret-key: h9vykLoosA0eeMSoa
+#    consumer-group: ofc-group
+#  nameServer: 139.196.112.185:9876
+#  producer:
+#    group: producer-mq
